@@ -23,15 +23,15 @@
         const box = document.getElementById('box')
         // 기능 분리 
         const alertSample = () => alert("alert 테스트 함수입니다.")
-        // 기능2, 배경색을 변경하는 기능.
+        // 기능2, 배경색을 변경하는 기능. 
         const backgroundChange = () => box.style.background = 'blue'
         // 기능3, 배경색을 원래대로 빨간색으로 변경하는 기능 추가하고, 이벤트 설정해보기
         const backgroundChange2 = () => box.style.background = 'red'
-        // 요소와 이벤트 연결 작업1
+        //요소와 이벤트 연결 작업1
         box.addEventListener('dblclick', alertSample)
-        // 요소와 이벤트 연결 작업2
+        //요소와 이벤트 연결 작업2
         box.addEventListener('mouseenter', backgroundChange)
-        // 요소와 이벤트 연결 작업3
+        //요소와 이벤트 연결 작업3
         box.addEventListener('mouseleave', backgroundChange2)
         // 이벤트 적용.
         // 기본 문법 btn.addEventListener(액션행위, 실행할 함수)
@@ -46,6 +46,7 @@
         // | `mouseenter` | 요소 안에 마우스 진입 시 |
         // | `mouseleave` | 요소에서 마우스가 나갈 때 |
         // | `mousemove`  | 마우스가 움직일 때     |
+
     </script>
 </body>
 

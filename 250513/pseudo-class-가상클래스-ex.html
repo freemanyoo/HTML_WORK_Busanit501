@@ -8,65 +8,84 @@
             color: red;
         }
 
+        /* 요소에 포커스(커서 진입)시 파란색 테두리로 설정 */
         input:focus {
-            border: 2px solid blue;
+            border: 10px solid blue;
         }
 
+        /* 버튼을 누르고 있는 동안 배경 초록, 글자 흰색 변경 */
         button:active {
             background: green;
             color: white;
         }
 
+        /* ul 리스트에서 첫 번째 항목 의미하고, 옵션 글자색 파란색 변경,  */
         ul li:first-child {
             color: blue;
         }
 
+        /* ul 리스트에서 마지막 번째 항목 의미하고, 옵션 글자색 빨간색 변경,  */
         ul li:last-child {
             color: red;
         }
 
+        /* ul 리스트에서 2 번째 항목 의미하고, 옵션 글자색 파란색 변경,  */
         ul li:nth-child(2) {
             font-weight: bold;
         }
 
+        /* p 태그 중에서 클래스가 highlight을 제외한 나머지 요소를 가리킴. not  반대  */
         p:not(.highlight) {
             color: gray;
         }
 
+        /* 체크박스가 체크되면 label 색상을 초록으로 변경 함.  */
         input[type="checkbox"]:checked+label {
             color: green;
         }
 
+        /* disabled : 입력창에 무언가 작업 못함(읽기전용, 서버에 데이터 전달 못함) */
         input:disabled {
             background: #eee;
         }
 
+        /* 내용이 없는 div 는 빨간 점선 테두와 높이 마진 설정. */
         div:empty {
             height: 30px;
             border: 2px dashed red;
             margin-bottom: 10px;
         }
 
+        /* 필수 입력 항목은 왼쪽에 주항색 선으로 표기함 
+        이메일 필수 기입 조건인데, 누락하고, 서버에 회원 가입 버튼을 누르면, 
+        html에서 기본 유효성 체크를 해서, 진행이 안됨. 즉, 반드시 이 항목을 채워야함.
+        필수 항목
+        */
         input:required {
             border-left: 5px solid orange;
         }
 
+        /* 올바른 값이 입력이 된 경우, 초록색 */
         input:valid {
             background: #e0ffe0;
         }
 
+        /* 잘못된 값이 입력이 된 경우, 분홍색 */
         input:invalid {
             background: #ffe0e0;
         }
 
+        /* section 내부의 p 태그 중 첫번째 */
         section p:first-of-type {
             color: blue;
         }
 
+        /* section 내부의 p 태그 중 마지막번째 */
         section p:last-of-type {
             color: red;
         }
 
+        /* section 내부의 p 태그 중 2번째 */
         section p:nth-of-type(2) {
             text-decoration: underline;
         }
@@ -112,6 +131,9 @@
         <li>1번 항목</li>
         <li>2번 항목</li>
         <li>3번 항목</li>
+        <li>4번 항목</li>
+        <li>5번 항목</li>
+        <li>6번 항목</li>
     </ul>
 
     <p class="highlight">강조된 문장</p>
