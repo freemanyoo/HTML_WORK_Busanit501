@@ -10,7 +10,7 @@
 <body>
     <h1>이벤트 설정 및 적용하는 다양한 방법 </h1>
     <h2>1 HTML 태그 내 onXXX 속성 직접정의, 장점: 구현 간단, 단점:가독성, 재사용 안됨 </h2>
-    <img id="sample_img1" src="/img/test1.jpg" alt="샘플이미지1" width="300px" style="block">
+    <img id="sample_img1" src="/img/test1.jpg" alt="샘플이미지1" width="300px">
     <!-- // onclick 하는 곳에 함수를 이용함, 
         // 함수 이용법 : 함수명(), ex) sayHi() -->
     <!-- 함수를 사용하기 전 구조 -->
@@ -117,8 +117,8 @@
         btn3_1.addEventListener('click', handleClick1)
         btn3_2.addEventListener('click', handleClick2)
 
-        const btn3_toggle = document.querySelector('#btn3_toggle');
-        const handleClick = document.getElementById('sample_img1');
+        const btn3_toggle = document.getElementById('btn3_toggle');
+        const handleClick = document.querySelector('#sample_img1');
 
         btn3_toggle.addEventListener('click', function () {
             if (handleClick.style.display === 'block' || handleClick.style.display === '') {
@@ -133,8 +133,6 @@
 
         // 미니실습, 처음에 onclick 으로 이미지를 show / hide 작업 했음.
         //     방법2 ~방법 4 를 이용해서, 똑같이 show / hide 해보기
-
-
     </script>
 </body>
 
